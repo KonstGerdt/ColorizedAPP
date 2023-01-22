@@ -6,6 +6,7 @@
 //
 
 import UIKit
+
 class ViewController: UIViewController {
     @IBOutlet weak var ColorWiev: UIView!
     
@@ -18,7 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var blueSlider: UISlider!
     
     
-    //MARK: - LifeCicle View
+//MARK: - LifeCicle View
     override func viewDidLoad() {
         super.viewDidLoad()
         ColorWiev.layer.cornerRadius = 15
@@ -39,8 +40,7 @@ class ViewController: UIViewController {
         
         }
 //MARK: - IBaction
-    @IBAction func RGBSlider(_ sender: UISlider) {
-        ColorWiev.backgroundColor = UIColor(
+    @IBAction func RGBSlider(_ sender: UISlider) {        ColorWiev.backgroundColor = UIColor(
                 red: CGFloat(redSlider.value),
                 green: CGFloat(greenSlider.value),
                 blue: CGFloat(blueSlider.value),
