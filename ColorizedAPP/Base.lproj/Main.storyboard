@@ -16,6 +16,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zNM-Tz-OqL">
+                                <rect key="frame" x="16" y="119" width="398" height="158"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0oJ-Fx-wZf">
                                 <rect key="frame" x="16" y="381" width="398" height="118"/>
                                 <subviews>
@@ -99,20 +103,16 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zNM-Tz-OqL">
-                                <rect key="frame" x="16" y="119" width="398" height="158"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Qx-bL-hGJ"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                         <constraints>
                             <constraint firstItem="0oJ-Fx-wZf" firstAttribute="leading" secondItem="6Qx-bL-hGJ" secondAttribute="leading" constant="16" id="9fc-DO-d1a"/>
                             <constraint firstItem="zNM-Tz-OqL" firstAttribute="leading" secondItem="6Qx-bL-hGJ" secondAttribute="leading" constant="16" id="IyI-BA-F50"/>
-                            <constraint firstAttribute="bottom" secondItem="zNM-Tz-OqL" secondAttribute="bottom" constant="655" id="Rd8-Em-i09"/>
-                            <constraint firstItem="6Qx-bL-hGJ" firstAttribute="bottom" secondItem="0oJ-Fx-wZf" secondAttribute="bottom" constant="399" id="cup-Ih-ZwO"/>
+                            <constraint firstItem="0oJ-Fx-wZf" firstAttribute="top" secondItem="zNM-Tz-OqL" secondAttribute="bottom" constant="104" id="VbU-9G-nNc"/>
                             <constraint firstAttribute="trailing" secondItem="0oJ-Fx-wZf" secondAttribute="trailing" constant="16" id="ded-QM-E7o"/>
                             <constraint firstItem="6Qx-bL-hGJ" firstAttribute="trailing" secondItem="zNM-Tz-OqL" secondAttribute="trailing" constant="16" id="tHE-Uc-21z"/>
+                            <constraint firstItem="6Qx-bL-hGJ" firstAttribute="bottom" secondItem="0oJ-Fx-wZf" secondAttribute="bottom" constant="399" id="yl0-xb-xZv"/>
                             <constraint firstItem="zNM-Tz-OqL" firstAttribute="top" secondItem="6Qx-bL-hGJ" secondAttribute="top" constant="60" id="zYD-Qv-G89"/>
                         </constraints>
                     </view>
