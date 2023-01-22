@@ -50,6 +50,7 @@ class ViewController: UIViewController {
             redLabel.text = String(format: "%.2f", redSlider.value)
             greenLabel.text = String(format: "%.2f", greenSlider.value)
             blueLabel.text = String(format: "%.2f", blueSlider.value)
+     
         
     }
     
